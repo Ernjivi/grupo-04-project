@@ -11,6 +11,10 @@ export class ProgramsService {
     return this.http.get(`${environment.apiUrl}programs/`)
   }
 
+  fetchProgram(id: string){
+    return this.http.get(`${environment.apiUrl}programs/${id}/`)
+  }
+
   sayHello(){
     console.log('Hola Mundo!');
   }

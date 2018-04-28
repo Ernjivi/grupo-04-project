@@ -6,6 +6,7 @@ import { ProgramsService } from './services/programs.service';
 import { ProgramsRoutingModule } from './programs-routing.module';
 
 import { ProgramListComponent } from './program-list/program-list.component';
+import { ProgramDetailComponent } from './program-detail/program-detail.component';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { ProgramListComponent } from './program-list/program-list.component';
     CommonModule,
     ProgramsRoutingModule
   ],
-  declarations: [ProgramListComponent],
+  declarations: [ProgramListComponent, ProgramDetailComponent],
   providers: [ProgramsService]
 })
 export class ProgramsModule { }

@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let program of programList">
-    {{ program.name }} - Courses: {{ program.courses.length }}
+    <a [routerLink]="['/program-detail', program.id]">{{ program.name }} - Courses: {{ program.courses.length }}</a>
   </li>
 </ul>
